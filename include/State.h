@@ -1,7 +1,7 @@
 #ifndef _STATE_H_
 #define _STATE_H_
 
-#include "SDL.h"
+#include <SDL2/SDL.h>
 #include "../include/Sprite.h"
 #include "../include/Music.h"
 

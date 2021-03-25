@@ -1,7 +1,7 @@
 #ifndef _GAME_H_
 #define _GAME_H_
 
-#include "SDL.h"
+#include <SDL2/SDL.h>
 #include "../include/State.h"
 #include <string>
 using namespace std;
