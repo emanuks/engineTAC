@@ -2,8 +2,12 @@
 #define _STATE_H_
 
 #include <SDL2/SDL.h>
-#include "../include/Sprite.h"
-#include "../include/Music.h"
+#include <vector>
+#include <memory>
+#include "Sprite.h"
+#include "Music.h"
+
+using namespace std;
 
 class State{
 public:
@@ -12,11 +16,15 @@ public:
 	void LoadAssets();
 	void Update(float dt);
 	void Render();
+	~State();
 
 private:
-	Sprite bg;
+	Sprite *bg;
 	Music music;
 	bool quitRequested;
+	void Input();
+	void AddObject(int mouseX, int mouseY);
+	vector<unique_ptr<GameObject>> objectArray;
 };
 
 #endif

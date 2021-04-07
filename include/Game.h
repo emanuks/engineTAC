@@ -2,7 +2,7 @@
 #define _GAME_H_
 
 #include <SDL2/SDL.h>
-#include "../include/State.h"
+#include "State.h"
 #include <string>
 using namespace std;
 
